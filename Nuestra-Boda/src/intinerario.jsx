@@ -7,6 +7,7 @@ import ConfirmacionAsistencia from "./componentes-encabezado/confirmacion";
 import CuentaRegresiva from "./componentes-encabezado/CuentaRegresiva";
 import Musica from "./componentes-encabezado/musica";
 import Frase from "./componentes-encabezado/Frase";
+import FinalBoda from "./componentes-encabezado/Final";
 
 export default function Itinerario() {
   return (
@@ -38,7 +39,7 @@ export default function Itinerario() {
 
           /* CEREMONIA */
           horaCeremonia="14:00"
-          lugarCeremonia="Templo Sagrado Familia"
+          lugarCeremonia="Templo de la Sagrada Familia"
           direccionCeremonia="38159 Celaya, Gto."
           ubicacionCeremonia="https://maps.app.goo.gl/gp284A35dcVduX2t9"
 
@@ -59,7 +60,8 @@ export default function Itinerario() {
       ========================================== */}
 
       <Intinerario2 />
-
+ 
+    <FinalBoda/>
 
     </div>
   );
