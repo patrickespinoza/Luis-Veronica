@@ -6,12 +6,15 @@ import Novios from "./componentes-encabezado/novios";
 import ConfirmacionAsistencia from "./componentes-encabezado/confirmacion";
 import CuentaRegresiva from "./componentes-encabezado/CuentaRegresiva";
 import Musica from "./componentes-encabezado/musica";
+import Frase from "./componentes-encabezado/Frase";
 
 export default function Itinerario() {
   return (
     <div>
        
        <Musica/>
+       
+      <Frase/>
 
        <CuentaRegresiva/>
       {/* =========================================
@@ -35,7 +38,7 @@ export default function Itinerario() {
 
           /* CEREMONIA */
           horaCeremonia="14:00"
-          lugarCeremonia="Iglesia de Ojo Seco"
+          lugarCeremonia="Templo Sagrado Familia"
           direccionCeremonia="38159 Celaya, Gto."
           ubicacionCeremonia="https://maps.app.goo.gl/gp284A35dcVduX2t9"
 
