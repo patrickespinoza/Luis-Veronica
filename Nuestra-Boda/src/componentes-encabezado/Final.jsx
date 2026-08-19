@@ -12,7 +12,7 @@ const FinalBoda = () => {
         md:min-h-[780px]
         overflow-hidden
         flex
-        items-center
+        items-end
         justify-center
       "
     >
@@ -34,7 +34,29 @@ const FinalBoda = () => {
       />
 
       {/* =========================================
-          CONTENIDO
+          DEGRADADO INFERIOR
+
+          Solo oscurece ligeramente la parte donde
+          estará el texto para mejorar la lectura.
+      ========================================== */}
+
+      <div
+        className="
+          absolute
+          inset-x-0
+          bottom-0
+          h-[65%]
+          bg-gradient-to-t
+          from-black/65
+          via-black/25
+          to-transparent
+          z-10
+          pointer-events-none
+        "
+      />
+
+      {/* =========================================
+          CONTENIDO INFERIOR
       ========================================== */}
 
       <motion.div
@@ -60,11 +82,12 @@ const FinalBoda = () => {
           w-full
           max-w-4xl
           px-6
+          pb-14
+          sm:pb-16
+          md:pb-20
           text-center
         "
       >
-
-
         {/* =========================================
             TÍTULO
         ========================================== */}
@@ -84,18 +107,18 @@ const FinalBoda = () => {
           }}
           viewport={{ once: true }}
           className="
-            mt-7
-            font-[Cedarville_Cursive]
-            text-5xl
-            sm:text-6xl
-            md:text-7xl
-            lg:text-8xl
+            font-playfair
+            text-4xl
+            sm:text-5xl
+            md:text-6xl
+            lg:text-7xl
+            font-medium
             leading-tight
-            text-[#243746]
-            drop-shadow-[0_2px_2px_rgba(255,255,255,0.7)]
+            text-white
+            drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]
           "
         >
-          Te esperamos
+          Te esperamos 
         </motion.h2>
 
         {/* =========================================
@@ -118,7 +141,7 @@ const FinalBoda = () => {
           viewport={{ once: true }}
           className="
             mx-auto
-            mt-8
+            mt-6
             flex
             w-[160px]
             items-center
@@ -126,132 +149,28 @@ const FinalBoda = () => {
             gap-3
           "
         >
-          <div
-            className="
-              h-px
-              flex-1
-              bg-[#243746]
-            "
-          />
+          <div className="h-px flex-1 bg-white/70" />
 
           <div
             className="
               h-2
               w-2
               rotate-45
-              bg-[#71847A]
+              bg-white
             "
           />
 
-          <div
-            className="
-              h-px
-              flex-1
-              bg-[#243746]
-            "
-          />
+          <div className="h-px flex-1 bg-white/70" />
         </motion.div>
 
+
+
+
         {/* =========================================
-            FRASE PRINCIPAL
+            INICIALES
         ========================================== */}
 
         <motion.p
-          initial={{
-            opacity: 0,
-            y: 25,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-            delay: 0.5,
-          }}
-          viewport={{ once: true }}
-          className="
-            mx-auto
-            mt-9
-            max-w-2xl
-            font-playfair
-            text-xl
-            sm:text-2xl
-            md:text-3xl
-            font-medium
-            leading-relaxed
-            text-[#060708]
-            drop-shadow-[0_1px_1px_rgba(255,255,255,0.7)]
-          "
-        >
-          Será un honor compartir contigo uno de los momentos más importantes
-          de nuestra historia.
-        </motion.p>
-
-        {/* =========================================
-            DETALLE
-        ========================================== */}
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            scale: 0.8,
-          }}
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 0.8,
-            delay: 0.7,
-          }}
-          viewport={{ once: true }}
-          className="
-            mx-auto
-            mt-10
-            flex
-            items-center
-            justify-center
-            gap-2
-          "
-        >
-          <span
-            className="
-              block
-              w-1.5
-              h-1.5
-              rounded-full
-              bg-[#71847A]
-            "
-          />
-
-          <span
-            className="
-              block
-              w-2
-              h-2
-              rotate-45
-              border
-              border-[#243746]
-            "
-          />
-
-          <span
-            className="
-              block
-              w-1.5
-              h-1.5
-              rounded-full
-              bg-[#71847A]
-            "
-          />
-        </motion.div>
-
-        {/* =========================================
-            NOMBRES FINALES
-        ========================================== */}
-
-        <motion.div
           initial={{
             opacity: 0,
             y: 15,
@@ -265,21 +184,19 @@ const FinalBoda = () => {
             delay: 0.8,
           }}
           viewport={{ once: true }}
-          className="mt-9"
+          className="
+            mt-7
+            font-playfair
+            text-2xl
+            sm:text-3xl
+            md:text-4xl
+            text-white
+            tracking-[0.15em]
+            drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+          "
         >
-          <p
-            className="
-              font-[Cedarville_Cursive]
-              text-3xl
-              sm:text-4xl
-              md:text-5xl
-              text-[#243746]
-              drop-shadow-[0_1px_1px_rgba(255,255,255,0.7)]
-            "
-          >
-            Luis & Veronica
-          </p>
-        </motion.div>
+          L & V
+        </motion.p>
       </motion.div>
     </section>
   );
