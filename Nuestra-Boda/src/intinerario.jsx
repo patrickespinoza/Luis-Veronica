@@ -5,11 +5,14 @@ import Intinerario2 from "./componentes-encabezado/itinerario2";
 import Novios from "./componentes-encabezado/novios";
 import ConfirmacionAsistencia from "./componentes-encabezado/confirmacion";
 import CuentaRegresiva from "./componentes-encabezado/CuentaRegresiva";
+import Musica from "./componentes-encabezado/musica";
 
 export default function Itinerario() {
   return (
     <div>
        
+       <Musica/>
+
        <CuentaRegresiva/>
       {/* =========================================
           SECCIÓN NOVIOS / PADRES / PADRINOS
