@@ -38,7 +38,7 @@ export default function Itinerario() {
           mesAnio="Diciembre 2026"
 
           /* CEREMONIA */
-          horaCeremonia="14:00"
+          horaCeremonia="13:00"
           lugarCeremonia="Templo de la Sagrada Familia"
           direccionCeremonia="38159 Celaya, Gto."
           ubicacionCeremonia="https://maps.app.goo.gl/gp284A35dcVduX2t9"
